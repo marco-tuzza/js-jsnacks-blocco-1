@@ -1,13 +1,17 @@
+// Sono scemo e non avevo capito la consegna scusatemi
+
 // Stampa il cubo dei primi N numeri, dove N è un numero indicato dall'utente
 
-// Chiediamo all'utente di forninrci un numero
-var numero = prompt('Inserisci un numero')
-// Creiamo una variabile che ci serve da contenitore per calcolare il cubo del numero scelto dal nostro utente
-var cubo = numero
-// Utilizziamo un ciclo per moltiplicare il numero scelto dal nostro utente per tre volte e calcolare così il cubo
-for (var i = 0; i < 2; i++) {
-    // La variabile cubo ci torna utile per poter memorizzare il risultato di ogni moltiplicazione effettuata dal ciclo, in modo tale da poter prendere il risultato del ciclo precedente e rimoltiplicarlo per il numero scelto dall'utente.
-    cubo = cubo * numero
+
+// Facciamo scegliere un numero all'utente
+var numero = parseInt(prompt('Inserisci un numero'))
+
+// Salviamo la variabile cubo che ci servirà come contenitore nel ciclo
+var cubo
+// Creiamo un ciclo dove la condizione di esistena è che il numero di elementi sia quello scelto dall'utente
+for (var i = 0; i <= numero; i++) {
+    // Utilizziamo la variabile creata in precedenza per calcolare il cubo di ogni elemento del nostro ciclo
+    cubo = i * i * i
+    // Stampiamo il risultato per ogni elemento i
+    console.log('Il cubo di ' + i + ' è ' + cubo)
 }
-// Stampiamo il risultato
-console.log('Il cubo di ' + numero + ' è ' + cubo)
